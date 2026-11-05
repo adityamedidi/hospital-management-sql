@@ -1,0 +1,31 @@
+-- =====================================================================
+-- File:    01_create_user.sql
+-- Purpose: (Optional) Create the HMS schema user with required privileges.
+--          Run as SYSDBA if you want a clean dedicated schema for the project.
+-- Author:  HMS Project
+-- Date:    2025
+-- =====================================================================
+-- This script is COMMENTED OUT by default because most developers already
+-- have a working schema. Uncomment the lines below and run as SYSDBA
+-- (sqlplus sys/<pwd>@//host:port/service AS SYSDBA) to create hms_user.
+-- =====================================================================
+
+-- CREATE USER hms_user IDENTIFIED BY hms_password
+--   DEFAULT TABLESPACE USERS
+--   TEMPORARY TABLESPACE TEMP
+--   QUOTA UNLIMITED ON USERS;
+--
+-- GRANT CREATE SESSION,
+--       CREATE TABLE,
+--       CREATE SEQUENCE,
+--       CREATE VIEW,
+--       CREATE SYNONYM,
+--       CREATE PROCEDURE,
+--       CREATE TRIGGER,
+--       CREATE TYPE
+--   TO hms_user;
+--
+-- -- Optional: let the user create public synonyms (rarely needed locally).
+-- -- GRANT CREATE PUBLIC SYNONYM TO hms_user;
+--
+-- PROMPT User hms_user created and privileged.

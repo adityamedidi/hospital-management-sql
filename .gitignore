@@ -1,0 +1,25 @@
+# Logs and listing files
+*.log
+*.lst
+
+# Environment / secrets
+*.env
+.env
+connection.txt
+
+# SQL*Plus spool files
+*.spool
+*.out
+
+# Oracle net/trace files
+*.trc
+*.trm
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
